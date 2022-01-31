@@ -1,0 +1,178 @@
+* {
+  padding: 0px;
+  margin: 0px;
+  font-family: Roboto, Verdana, Geneva, Tahoma, sans-serif;
+}
+
+/* Styles for sidebar */
+.sidebar {
+  background-color: #1992d4;
+  width: 20%;
+  height: 100vh;
+  float: left;
+  color: white;
+}
+
+.sidebar img {
+  filter: invert(100%) sepia(100%) saturate(0%) hue-rotate(288deg)
+    brightness(102%) contrast(102%);
+  /* margin: 10px 10px 10px 25px; */
+}
+
+.sidebar .wrapper {
+  display: grid;
+  grid-template-columns: 1fr 4fr;
+  grid-auto-rows: 50px;
+  grid-row-gap: 2px;
+  grid-column-gap: 5px;
+  margin: 15px 15px 50px 15px;
+  align-items: center;
+}
+
+/* Styles for header */
+header .wrapper:first-child {
+  display: grid;
+  grid-template-columns: auto 3fr auto auto 1fr;
+  padding: 0px;
+}
+
+header > .wrapper > * {
+  margin: 10px;
+}
+
+header > .wrapper > .icon {
+  height: 30px;
+}
+
+header > .wrapper > input {
+  height: 30px;
+  width: 500px;
+  border-radius: 15px;
+  background-color: #e2e8f0;
+}
+
+.avatar_small {
+  height: 60px;
+}
+
+.avatar {
+  height: 80px;
+}
+
+header .wrapper:nth-child(2) {
+  display: grid;
+  grid-template-columns: auto 1fr auto auto auto;
+  align-items: center;
+  margin-bottom: 20px;
+}
+
+button {
+  background-color: #1992d4;
+  border: none;
+  border-radius: 25px;
+  width: 125px;
+  height: 40px;
+  font-size: 20px;
+  color: white;
+}
+
+header p {
+  font-weight: 600;
+}
+
+/* Styling for main section */
+main {
+  background-color: #e2e8f0;
+  position: relative;
+  float: right;
+  width: 80%;
+  height: calc(100vh - 200px);
+}
+
+main > div {
+  float: left;
+  width: 70%;
+}
+
+main h3 {
+  margin: 10px 0px 10px 20px;
+}
+
+main .wrapper {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+}
+
+main .wrapper div {
+  margin: 20px;
+  padding: 10px;
+  background-color: white;
+  border-radius: 10px;
+  border-left: 10px solid #f0b429;
+  display: grid;
+  grid-template-columns: 1fr;
+}
+
+main > div > .wrapper > div > .imageWrapper {
+  display: grid;
+  grid-template-columns: 1fr auto auto auto;
+  border: none;
+  margin: 0px;
+  align-items: end;
+}
+
+main img {
+  padding: 10px;
+  justify-self: end;
+}
+
+/* Syling for Announcements section */
+announcements .container {
+  margin: 30px;
+  padding: 10px;
+  background-color: white;
+  border-radius: 10px;
+  display: grid;
+  grid-template-columns: 1fr;
+}
+
+announcements h4,
+announcements p {
+  margin: 5px;
+}
+
+announcements h4 {
+  font-size: 16px;
+}
+
+announcements p {
+  font-size: 14px;
+  border-bottom: 1px solid #cbd5e1;
+  padding-bottom: 10px;
+}
+
+/* Styling for Trending section */
+trending .container {
+  margin: 30px;
+  padding: 10px;
+  background-color: white;
+  border-radius: 10px;
+  display: grid;
+  grid-template-columns: auto 1fr;
+}
+
+trending img {
+  height: 50px;
+}
+
+trending h4 {
+  font-size: 16px;
+}
+
+trending p {
+  font-size: 14px;
+}
+
+.container > div {
+  align-self: center;
+}
