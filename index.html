@@ -15,7 +15,7 @@
   </head>
   <body>
     <!-- Sidebar -->
-    <div class="sidebar">
+    <nav>
       <div class="wrapper">
         <img src="icons/dashboard.svg" alt="" />
         <h1>Dashboard</h1>
@@ -42,7 +42,7 @@
         <img src="icons/privacy.svg" alt="" />
         <h2>Privacy</h2>
       </div>
-    </div>
+    </nav>
     <div class="header"></div>
     <div class="main"></div>
 
@@ -68,8 +68,8 @@
     </header>
 
     <!-- Main section -->
-    <main>
-      <div>
+    <div>
+      <main>
         <h3>Your Projects</h3>
         <div class="wrapper">
           <div>
@@ -170,67 +170,73 @@
             </div>
           </div>
         </div>
+      </main>
+
+      <!-- Side panel for announcements -->
+      <div class="leftSection">
+        <aside class="announcements">
+          <h3>Announcements</h3>
+
+          <div class="container">
+            <div>
+              <h4>Site Maintenance</h4>
+              <p>
+                Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do
+                eiusmod tempor incididunt ut labore et dolore magna aliqua.
+                Sollicitudin ac orci phasellus egestas tellus rutrum.
+              </p>
+            </div>
+            <div>
+              <h4>Community Share Day</h4>
+              <p>
+                Mauris ultrices eros in cursus turpis massa tincidunt. Varius
+                duis at consectetur lorem donec massa sapien. Nisl condimentum
+                id venenatis a condimentum vitae sapien pellentesque.
+              </p>
+            </div>
+            <div>
+              <h4>Updated Privacy Policy</h4>
+              <p>
+                Pharetra magna ac placerat vestibulum lectus mauris ultrices.
+                Natoque penatibus et magnis dis parturient montes. Tincidunt
+                tortor aliquam nulla facilisi cras. Nisi est sit amet facilisis
+                magna etiam tempor orci eu.
+              </p>
+            </div>
+          </div>
+        </aside>
+
+        <!-- Side panel for trending topics -->
+        <aside class="trending">
+          <h3>Trending</h3>
+
+          <div class="container">
+            <img src="avatars/tegan.svg" alt="" />
+            <div>
+              <p>@tegan</p>
+              <p>World Peace Builder</p>
+            </div>
+
+            <img src="avatars/morgan.svg" alt="" />
+            <div>
+              <p>@morgan</p>
+              <p>Super Cool Project</p>
+            </div>
+
+            <img src="avatars/kendall.svg" alt="" />
+            <div>
+              <p>@kendall</p>
+              <p>Life Changing App</p>
+            </div>
+
+            <img src="avatars/alex.svg" alt="" />
+            <div>
+              <p>@alex</p>
+              <p>No Traffic Maker</p>
+            </div>
+          </div>
+        </aside>
       </div>
-      <announcements>
-        <h3>Announcements</h3>
-
-        <div class="container">
-          <div>
-            <h4>Site Maintenance</h4>
-            <p>
-              Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do
-              eiusmod tempor incididunt ut labore et dolore magna aliqua.
-              Sollicitudin ac orci phasellus egestas tellus rutrum.
-            </p>
-          </div>
-          <div>
-            <h4>Community Share Day</h4>
-            <p>
-              Mauris ultrices eros in cursus turpis massa tincidunt. Varius duis
-              at consectetur lorem donec massa sapien. Nisl condimentum id
-              venenatis a condimentum vitae sapien pellentesque.
-            </p>
-          </div>
-          <div>
-            <h4>Updated Privacy Policy</h4>
-            <p>
-              Pharetra magna ac placerat vestibulum lectus mauris ultrices.
-              Natoque penatibus et magnis dis parturient montes. Tincidunt
-              tortor aliquam nulla facilisi cras. Nisi est sit amet facilisis
-              magna etiam tempor orci eu.
-            </p>
-          </div>
-        </div>
-      </announcements>
-      <trending>
-        <h3>Trending</h3>
-
-        <div class="container">
-          <img src="avatars/tegan.svg" alt="" />
-          <div>
-            <p>@tegan</p>
-            <p>World Peace Builder</p>
-          </div>
-
-          <img src="avatars/morgan.svg" alt="" />
-          <div>
-            <p>@morgan</p>
-            <p>Super Cool Project</p>
-          </div>
-
-          <img src="avatars/kendall.svg" alt="" />
-          <div>
-            <p>@kendall</p>
-            <p>Life Changing App</p>
-          </div>
-
-          <img src="avatars/alex.svg" alt="" />
-          <div>
-            <p>@alex</p>
-            <p>No Traffic Maker</p>
-          </div>
-        </div>
-      </trending>
-    </main>
+    </div>
   </body>
 </html>

@@ -5,21 +5,23 @@
 }
 
 /* Styles for sidebar */
-.sidebar {
+nav {
   background-color: #1992d4;
-  width: 20%;
-  height: 100vh;
+  width: 300px;
+  min-height: 100vh;
+  height: 100%;
+
   float: left;
   color: white;
 }
 
-.sidebar img {
+nav img {
   filter: invert(100%) sepia(100%) saturate(0%) hue-rotate(288deg)
     brightness(102%) contrast(102%);
   /* margin: 10px 10px 10px 25px; */
 }
 
-.sidebar .wrapper {
+nav .wrapper {
   display: grid;
   grid-template-columns: 1fr 4fr;
   grid-auto-rows: 50px;
@@ -80,12 +82,17 @@ header p {
   font-weight: 600;
 }
 
+/* Styling for div containing main and aside sections */
+body > div {
+  position: relative;
+}
+
 /* Styling for main section */
 main {
   background-color: #e2e8f0;
   position: relative;
-  float: right;
-  width: 80%;
+  float: left;
+  width: calc((100vw - 300px) * 0.7);
   height: calc(100vh - 200px);
 }
 
@@ -101,6 +108,7 @@ main h3 {
 main .wrapper {
   display: grid;
   grid-template-columns: 1fr 1fr;
+  width: 100%;
 }
 
 main .wrapper div {
@@ -113,7 +121,7 @@ main .wrapper div {
   grid-template-columns: 1fr;
 }
 
-main > div > .wrapper > div > .imageWrapper {
+main > .wrapper > div > .imageWrapper {
   display: grid;
   grid-template-columns: 1fr auto auto auto;
   border: none;
@@ -126,8 +134,18 @@ main img {
   justify-self: end;
 }
 
+/* Styling for div containing announcements and trending asides */
+.leftSection {
+  position: absolute;
+  top: 0;
+  right: 0;
+  width: calc((100vw - 300px) * 0.3);
+  background-color: #e2e8f0;
+  height: calc(100vh - 200px);
+}
+
 /* Syling for Announcements section */
-announcements .container {
+.announcements .container {
   margin: 30px;
   padding: 10px;
   background-color: white;
@@ -136,23 +154,27 @@ announcements .container {
   grid-template-columns: 1fr;
 }
 
-announcements h4,
-announcements p {
+.announcements h3 {
+  margin: 10px 0px 10px 20px;
+}
+
+.announcements h4,
+.announcements p {
   margin: 5px;
 }
 
-announcements h4 {
+.announcements h4 {
   font-size: 16px;
 }
 
-announcements p {
+.announcements p {
   font-size: 14px;
   border-bottom: 1px solid #cbd5e1;
   padding-bottom: 10px;
 }
 
 /* Styling for Trending section */
-trending .container {
+.trending .container {
   margin: 30px;
   padding: 10px;
   background-color: white;
@@ -161,15 +183,20 @@ trending .container {
   grid-template-columns: auto 1fr;
 }
 
-trending img {
+.trending img {
   height: 50px;
+  margin: 10px;
 }
 
-trending h4 {
+.trending h3 {
+  margin: 10px 0px 10px 20px;
+}
+
+.trending h4 {
   font-size: 16px;
 }
 
-trending p {
+.trending p {
   font-size: 14px;
 }
 
